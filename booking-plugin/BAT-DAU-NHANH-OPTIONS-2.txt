@@ -1,0 +1,108 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║         BẮT ĐẦU NHANH - OPTIONS 2 (BẢNG GIÁ THỦ CÔNG)      ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+📌 MỤC ĐÍCH: Test hệ thống KHÔNG CẦN Google Maps API Key
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 BƯỚC 1: CHỌN CHẾ ĐỘ (2 phút)
+
+   1. Vào: WordPress Admin
+   2. Click: Đặt Xe > Cài Đặt
+   3. Click: Tab "Bảng Giá"
+   4. Chọn: "Tùy chỉnh (Options 2 - Bảng giá thủ công)"
+   5. Bấm: "Lưu Chế Độ Tính Giá" ← QUAN TRỌNG!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 BƯỚC 2: THÊM BẢNG GIÁ (5 phút)
+
+   Bấm "Thêm Bảng Giá" và điền:
+
+   ┌─────────────────────────────────────────┐
+   │ Loại xe:      7 chỗ                     │
+   │ Loại chuyến:  Sân bay                   │
+   │ Giá cơ bản:   200000                    │
+   │ Giá/Km:       15000                     │
+   │ Km tối thiểu: 0                         │
+   │ Km tối đa:    0                         │
+   │ VAT:          0.1                       │
+   │ ✓ Kích hoạt                             │
+   └─────────────────────────────────────────┘
+
+   Bấm "Lưu Bảng Giá"
+
+   Lặp lại cho các loại xe khác:
+   • 4 chỗ cốp rộng: 150000 + 12000/km
+   • 4 chỗ cốp nhỏ:  130000 + 10000/km
+   • 16 chỗ:         300000 + 20000/km
+   • 29 chỗ:         500000 + 30000/km
+   • 45 chỗ:         800000 + 40000/km
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ BƯỚC 3: TEST (1 phút)
+
+   1. Vào trang đặt xe
+   2. Nhập điểm đi: 247 Cầu Giấy, Hà Nội
+   3. Nhập điểm đến: Sân bay Nội Bài
+   4. Chọn loại xe: 7 chỗ
+   5. Bấm "Kiểm Tra Giá"
+
+   KẾT QUẢ:
+   ✓ Thấy thông báo màu vàng
+   ✓ Giá hiển thị: ~650,000đ (hoặc 715,000đ nếu có VAT)
+   ✓ Form liên hệ hiện ra
+   ✓ KHÔNG có lỗi Google Maps
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 CÔNG THỨC TÍNH
+
+   Giá = Giá cơ bản + (30km × Giá/km)
+   
+   Ví dụ xe 7 chỗ:
+   = 200,000 + (30 × 15,000)
+   = 200,000 + 450,000
+   = 650,000đ
+   
+   Nếu có VAT: 650,000 × 1.1 = 715,000đ
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔄 CHUYỂN SANG OPTIONS 1 (KHI CÓ GOOGLE API)
+
+   1. Cài Đặt > Tab "Cài Đặt Chung"
+   2. Nhập Google Maps API Key
+   3. Lưu
+   4. Tab "Bảng Giá"
+   5. Chọn "Tự động (Options 1)"
+   6. Lưu Chế Độ Tính Giá
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ KHẮC PHỤC LỖI
+
+   Lỗi: "Chưa có bảng giá cho loại xe này"
+   → Thêm bảng giá cho loại xe đó
+
+   Lỗi: Vẫn báo lỗi Google Maps
+   → Kiểm tra đã chọn "Tùy chỉnh" và lưu chưa
+
+   Không thấy nút "Thêm Bảng Giá"
+   → Chọn "Tùy chỉnh (Options 2)" rồi lưu lại
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 TÀI LIỆU CHI TIẾT
+
+   • HUONG-DAN-SU-DUNG-OPTIONS-2.md - Hướng dẫn nhanh
+   • TEST-CUSTOM-PRICING.md - Hướng dẫn chi tiết
+   • TONG-KET-OPTIONS-2.md - Tổng kết đầy đủ
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+© 2026 Nguyễn Việt Bắc. All Rights Reserved.
